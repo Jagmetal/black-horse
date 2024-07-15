@@ -1,0 +1,35 @@
+.about-us {
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: left;
+    width: 100%;
+    max-width: 700px; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-slider {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-us h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: 700; /* Bold font weight for headers */
+    font-family: "Bona Nova SC", serif; /* Apply the new font */
+  }
+  
+  .about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    font-weight: 400; /* Regular font weight for paragraphs */
+    font-family: Arial, sans-serif; /* Use a regular font */
+  }
+  
