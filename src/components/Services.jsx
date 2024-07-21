@@ -7,6 +7,7 @@ const Services = () => {
     email: '',
     message: ''
   });
+  const [statusMessage, setStatusMessage] = useState(''); // Add state for status message
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,10 +17,29 @@ const Services = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    setStatusMessage(''); // Clear previous status message
+
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok.');
+      }
+
+      const result = await response.text();
+      setStatusMessage('Email sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setStatusMessage('Failed to send email.');
+    }
   };
 
   return (
@@ -66,6 +86,7 @@ const Services = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
+      {statusMessage && <p>{statusMessage}</p>} {/* Display status message */}
     </section>
   );
 };
