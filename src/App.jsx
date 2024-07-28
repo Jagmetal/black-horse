@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
-import '../src/styles/App.css';
+import './styles/App.css';
 
 const App = () => (
   <div className="App">
