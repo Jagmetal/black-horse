@@ -11,8 +11,6 @@ const images = [
   '/blackhorse-project/assets/img6.jpg',
 ];
 
-
-
 const AboutUs = () => {
   const settings = {
     dots: true,
