@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Output directory for build files
     rollupOptions: {
-      input: '/src/main.jsx', // Ensure this path is correct
+      input: '/index.html', // Ensure this path is correct
     }
   }
 })
