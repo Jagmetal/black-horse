@@ -5,10 +5,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  '/assets/img1.jpg',
-  '/assets/img2.jpg',
-  '/assets/img3.jpg',
-  '/assets/img6.jpg',
+  '/blackhorse-project/assets/img1.jpg',
+  '/blackhorse-project/assets/img2.jpg',
+  '/blackhorse-project/assets/img3.jpg',
+  '/blackhorse-project/assets/img6.jpg',
 ];
 
 
