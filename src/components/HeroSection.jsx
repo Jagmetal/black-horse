@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const HeroSection = () => (
   <section className="hero">
     <div className="hero-content">
