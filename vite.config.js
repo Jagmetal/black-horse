@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/blackhorse-project/',
+  base: '/blackhorse-project/', // Set the base URL to the repository name
   build: {
-    outDir: 'dist',
+    outDir: 'dist', // Output directory for build files
     rollupOptions: {
-      input: 'index.html',
+      input: 'src/main.jsx', // Ensure this path is correct
     },
   },
 })
