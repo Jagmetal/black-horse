@@ -51,7 +51,7 @@ const Services = () => {
       <h3>Contact Us</h3>
       <p>Email: blackhorselogisticsgroup@yahoo.com</p>
       <p>Phone: +61 449 983 002</p>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      {/*<form className="contact-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input 
